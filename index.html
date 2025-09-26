@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Zelda Browser</title> -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">Zelda Browser</a></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Favourites</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <form action="">
+      <div class="search">
+        <span class="search-icon material-symbols-outlined"> search </span>
+        <input class="search-input" type="search" placeholder="Search" />
+      </div>
+    </form>
+
+    <!-- <h1>Zelda Browser</h1> -->
+    <select id="endpointSelect">
+      <option value="characters">Characters</option>
+      <option value="items">Items</option>
+      <option value="monsters">Monsters</option>
+      <option value="bosses">Bosses</option>
+      <option value="dungeons">Dungeons</option>
+      <option value="places">Places</option>
+      <option value="games">Games</option>
+      <option value="staff">Staff</option>
+    </select>
+    <button id="loadData">Load Data</button>
+
+
+    <div id="resultsCounter" style="margin: 10px 0; font-weight: bold;"></div>
+
+    <div id="results"></div>
+
+    <div id="pagination">
+      <button id="prevPage">Previous</button>
+      <button id="nextPage">Next</button>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
